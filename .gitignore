@@ -1,0 +1,13 @@
+.idea
+.env
+dist
+node_modules
+coverage/*
+test.log
+# stryker temp files
+.stryker-tmp
+!/coverage/
+!/.stryker-tmp/
+!/reports/
+!/stryker.log
+newrelic_agent.log
