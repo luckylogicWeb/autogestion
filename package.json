@@ -15,12 +15,6 @@
     "pre-commit": "eslint .",
     "pre-push": "npm test:cov"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm pre-commit",
-      "pre-push": "npm pre-push"
-    }
-  },
   "keywords": [],
   "author": "Luckylogic",
   "license": "ISC",
