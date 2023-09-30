@@ -1,7 +1,6 @@
 .idea
 .env
 dist
-node_modules
 coverage/*
 test.log
 # stryker temp files
