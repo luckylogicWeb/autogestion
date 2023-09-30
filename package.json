@@ -2,7 +2,7 @@
   "name": "api-autogestion",
   "version": "0.0.1",
   "description": "Autogestion API",
-  "main": "bin/server",
+  "main": "bin/www",
   "scripts": {
     "init:env": "cp .env.override .env",
     "start": "node bin/www/index.js",
