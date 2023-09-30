@@ -22,7 +22,7 @@ const createOAuthHeaders = (url, method) => {
   };
   const auth = oauth.toHeader(oauth.authorize(requestData));
 
-  return { headers: { ...auth, Cookie: cookie } };
+  return { headers: { ...auth }, maxRedirects: 0 };
 };
 
 module.exports = createOAuthHeaders;

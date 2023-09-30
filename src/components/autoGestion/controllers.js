@@ -1,6 +1,7 @@
 const {
   apiAutoGestion: { baseUrl },
 } = require("../../../config/env");
+const { parseString } = require("xml2js");
 
 const { getRequest } = require("../../request");
 const createOAuthHeaders = require("./oauth");
@@ -10,6 +11,17 @@ const getVehiculesById = async (id) => {
   const { data } = await getRequest(url, createOAuthHeaders(url, "GET"));
 
   return data;
+};
+
+exports.company = async (req, res) => {
+  try {
+    const url = `${baseUrl}/ag_company`;
+    const { data } = await getRequest(url, createOAuthHeaders(url, "GET"));
+
+    res.status(200).json(data);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
 };
 
 exports.vehicules = async (req, res) => {

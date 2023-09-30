@@ -10,6 +10,6 @@ module.exports = (app) => {
   app.use("/", router);
 
   app.get("/healthz", (req, res) => {
-    return res.json("Welcome on autogestion medacar api.");
+    return res.json("Welcome on autogestion api.");
   });
 };

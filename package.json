@@ -1,7 +1,7 @@
 {
-  "name": "apiautogestion-medacar",
+  "name": "api-autogestion",
   "version": "0.0.1",
-  "description": "Autogestion Medacar",
+  "description": "Autogestion API",
   "main": "bin/server",
   "scripts": {
     "init:env": "cp .env.override .env",
@@ -22,7 +22,7 @@
     }
   },
   "keywords": [],
-  "author": "Medacar",
+  "author": "Luckylogic",
   "license": "ISC",
   "jest": {
     "displayName": {
@@ -71,10 +71,12 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
+    "https": "^1.0.0",
     "joi": "^17.3.0",
     "nodemon": "^3.0.1",
     "oauth-1.0a": "^2.2.6",
     "pino": "^6.7.0",
-    "pino-pretty": "^4.3.0"
+    "pino-pretty": "^4.3.0",
+    "xml2js": "^0.6.2"
   }
 }
